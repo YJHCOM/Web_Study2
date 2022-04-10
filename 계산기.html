@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<style>
+			table{
+				border-collapse:collapse;
+			}
+	
+			td{
+				text-align:center;
+			}
+			input{
+				text-align:right;
+				border: none;
+				background-color:dimgray;
+			}
+			input:focus{
+				outline: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<table border="1">
+			<tr style="background-color:dimgray" >
+				<td colspan="4">
+					<input type="text" id="express" style="color:white" >
+				</td>
+			</tr>
+			<tr style="background-color:dimgray">
+				<td colspan="4"> 
+					<input type="text" id="res" style="color:white">
+				</td>
+			</tr>
+			<tr style="background-color:coral">
+				<td colspan="3" onclick="reset()">AC</td><td onclick="sik('/')">	/</td>
+			</tr>
+			<tr style="background-color:gainsboro">
+				<td onclick="sik(7)">7</td> 
+				<td onclick="sik(8)">8</td> 
+				<td onclick="sik(9)">9</td> 
+				<td onclick="sik('X')">X</td>
+			</tr>
+			<tr style="background-color:gainsboro">
+				<td onclick="sik(4)">4</td> 
+				<td onclick="sik(5)">5</td> 
+				<td onclick="sik(6)">6</td> 
+				<td onclick="sik('-')">-</td>
+			</tr>
+			<tr style="background-color:coral">
+				<td onclick="sik(1)">1</td> 
+				<td onclick="sik(2)" > 2</td> 
+				<td onclick="sik(3)" >3</td>
+				<td onclick="sik('+')">+</td>
+ 			</tr>
+			<tr style="background-color:gainsboro">
+				<td colspan="2" onclick="sik(0)">0</td> 
+				<td onclick="sik('.')">.</td> 
+				<td onclick="calc()" > =</td>
+			</tr>
+		</table>
+		<script>
+			function sik(char)
+			{
+				var dis = document.getElementById("express"	);
+				dis.value+=char;
+			}
+			function calc()
+			{
+				var n = document.getElementById("express");
+				var result = eval(express.value);
+				document.getElementById('res').value= result;
+			}
+			function reset(){
+				document.getElementById("express").value = " ";
+				document.getElementById("res").value = " ";
+			}
+		</script>	
+		
+	</body>
+</html>

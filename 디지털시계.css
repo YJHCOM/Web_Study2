@@ -1,0 +1,21 @@
+*{
+	text-align: center;
+	position:relative;
+	top:50px;
+	font-weight:100;
+}
+body{
+	background-color:midnightblue;
+}
+
+.date
+{
+	font-size: 150px;
+	color:white;
+}
+
+.time
+{
+	font-size: 150px;
+	color: white;
+}

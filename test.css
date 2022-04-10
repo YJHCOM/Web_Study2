@@ -1,0 +1,72 @@
+table{
+	border-collapse:collapse;
+	
+	align:center;
+	width:600px;
+	height:500px;
+	margin:auto;
+	margin-right:500px;
+	border:none;
+}
+tr{
+	text-align:left;
+	align:center;
+	border:none;
+}
+td{
+	width:200px;
+	height:42px;
+	border:none;
+}
+select:focus
+{
+	outline:1px solid lime;
+}
+input:focus
+{
+	outline: 1px solid lime;
+}
+input{
+	width:100%;
+	height:42px;
+}
+.x{
+	width:400px;
+	height:42px;
+}
+.y{
+	width:200px;
+	height:42px;
+}
+.i{
+	
+	align:center-bottom;
+	width:650px;
+	height:60px;
+}
+
+select{
+	width:100%;
+	height:42px;
+}
+body
+{
+	background-color:white;
+}
+
+.image-box
+{
+
+	margin:0 auto;
+	position:relative;
+	width:250px;
+	height:50px;
+	overflow:hidden;
+}
+.image-thumbnail
+{
+
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}

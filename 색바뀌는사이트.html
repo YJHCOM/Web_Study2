@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title> Color-change </title>
+		<style>
+			table{
+			border : none;
+			width : 300px;
+			height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<table align="center">
+			<tr>
+				<td id = "redid" onmouseover="change_r()" style="background-color:red"> </td>
+				<td id = "blueid" onmouseover="change_b()" style="background-color:blue"> </td> 
+				<td id = "greenid" onmouseover="change_g()" style="background-color:green"> </td>
+			</tr>
+		</table>
+		<script>
+			function change_r()
+			{
+				document.body.style.backgroundColor= 'red'; 
+			}
+			function change_b()
+			{
+				document.body.style.backgroundColor= 'blue'; 
+			}
+			function change_g()
+			{
+				document.body.style.backgroundColor= 'green'; 
+			}
+		</script>
+	</body>
+</html>
